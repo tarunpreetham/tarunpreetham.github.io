@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #0b0f19;
+    background: #070808;
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -18,7 +18,7 @@ body {
 
 .hero h1 {
     font-size: 4rem;
-    color: #00d4ff;
+    color: #37db04;
     margin-bottom: 10px;
 }
 
