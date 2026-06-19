@@ -1,24 +1,55 @@
 body {
     margin: 0;
-    background: #070808;
+    background: #0b0f19;
     color: white;
     font-family: Arial, sans-serif;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 8%;
+    background: rgba(11, 15, 25, 0.9);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.logo {
+    color: #00d4ff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
 .hero {
     min-height: 75vh;
-
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    background:
+        radial-gradient(circle at top, rgba(0, 212, 255, 0.15), transparent 35%),
+        #0b0f19;
 }
 
 .hero h1 {
     font-size: 4rem;
-    color: #37db04;
+    color: #00d4ff;
     margin-bottom: 10px;
 }
 
@@ -33,7 +64,7 @@ body {
     background: #00d4ff;
     color: black;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
 }
 
@@ -44,4 +75,61 @@ body {
 
 section {
     padding: 60px 10%;
+}
+
+section h2 {
+    color: #00d4ff;
+    font-size: 2rem;
+}
+
+section p {
+    color: #d1d5db;
+    line-height: 1.7;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #141b2d;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    flex: 1;
+}
+
+.card h3 {
+    color: white;
+}
+
+.card p {
+    color: #d1d5db;
+}
+
+.card:hover {
+    border-color: #00d4ff;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
 }
