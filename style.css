@@ -132,4 +132,25 @@ section p {
     .nav-links {
         margin-top: 10px;
     }
+
+    .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.highlight {
+    background: #141b2d;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #d1d5db;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
 }
